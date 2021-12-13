@@ -11,7 +11,7 @@ public class Students {
 	}
 
 	public List<Student> getStudents() {
-		students.add(new Student(1, "John Doe", "Computer Science", "66502", "john.doe@school.edu"));
+		students.add(new Student(1, "John Doe", "Computer Science", "008E1", "john.doe@school.edu"));
 		return students;
 	}
 }
