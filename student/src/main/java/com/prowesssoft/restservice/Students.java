@@ -1,5 +1,8 @@
 package com.prowesssoft.restservice;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Students {
 	private List<Student> students;
 	public Students() {
