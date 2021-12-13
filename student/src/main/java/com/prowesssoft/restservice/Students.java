@@ -1,13 +1,11 @@
 package com.prowesssoft.restservice;
 
 public class Students {
-
-    Student[] myStudent = {Student(1, "John Doe", "Computer Science", "66502", "john.doe@school.edu")};
-
-    public Students(Student[] myStudent) {
-        this.myStudent = myStudent;
+	private List<Student> students;
+	public Students() {
+		students = new ArrayList<>();
+	}
+    public List<Student> getStudents() {
+    	students.add(new Student(1, "John Doe", "Computer Science", "66502", "john.doe@school.edu"));
+        return students;
     }
-    public long getStudents() {
-        return myStudent;
-    }
-}
