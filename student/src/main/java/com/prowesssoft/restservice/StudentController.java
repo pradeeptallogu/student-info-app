@@ -11,12 +11,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StudentController {
 
+	@Autowired
+	private StudentService studentService;
+
     public static void main(String[] args) {
         SpringApplication.run(StudentController.class, args);
     }
 
     @GetMapping("/students")
-    public Student[] students(Student[] myStudent) {
-        return new Students(myStudent);
+    public Students students() {
+        return studentService.getStudents();
     }
 }
