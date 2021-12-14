@@ -14,6 +14,9 @@ public class StudentController {
 	@Autowired
 	private StudentService studentService;
 
+    @Autowired
+    private EnrollmentService enrollmentService;
+
     public static void main(String[] args) {
         SpringApplication.run(StudentController.class, args);
     }
@@ -22,4 +25,7 @@ public class StudentController {
     public Students students() {
         return studentService.getStudents();
     }
+
+    @GetMapping("/enrollments")
+    public Enrollments enrollments() { return enrollmentService.getEnrollments();}
 }

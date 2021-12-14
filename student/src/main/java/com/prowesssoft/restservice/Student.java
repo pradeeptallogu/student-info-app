@@ -5,14 +5,14 @@ public class Student {
     private final long id;
     private final String name;
     private final String department;
-    private final String postal_code;
+    private final String postalCode;
     private final String email;
 
-    public Student(long id, String name, String department, String postal_code, String email) {
+    public Student(long id, String name, String department, String postalCode, String email) {
         this.id = id;
         this.name = name;
         this.department = department;
-        this.postal_code = postal_code;
+        this.postalCode = postalCode;
         this.email = email;
     }
 
@@ -26,7 +26,7 @@ public class Student {
         return department;
     }
     public String getPostalCode() {
-        return postal_code;
+        return postalCode;
     }
     public String getEmail() {
         return email;

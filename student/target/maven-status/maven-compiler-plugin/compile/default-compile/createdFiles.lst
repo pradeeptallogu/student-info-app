@@ -1,4 +1,7 @@
 com\prowesssoft\restservice\Student.class
-com\prowesssoft\restservice\Students.class
+com\prowesssoft\restservice\Enrollment.class
 com\prowesssoft\restservice\StudentService.class
+com\prowesssoft\restservice\Enrollments.class
+com\prowesssoft\restservice\Students.class
+com\prowesssoft\restservice\EnrollmentService.class
 com\prowesssoft\restservice\StudentController.class
